@@ -1,0 +1,88 @@
+body{
+    background-color: #000000;
+
+}
+.header-container{
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3 {
+    margin: 10px 0;
+}
+
+.highlight{
+    color: #fab300;
+    font-size: 40px;
+    font-family: 'Handwritten', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.h3{
+    margin-bottom: 2px;
+}
+p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0px 0;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding-right: 40px;
+    background: transparent;
+}
+.navbar ul li{
+    display: inline-block;
+}
+
+.button-container{
+    text-align: center;
+    margin-top: 0;
+    word-spacing: 5px;
+}
+
+.btn{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+.about-me{
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
