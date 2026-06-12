@@ -86,3 +86,24 @@ img{
     padding: 20px;
     color: #ffffff;
 }
+
+.skillset{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.skills span {
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 1.5px solid #ffd500;
+    display: inline-block;
+    border-radius: 5px;
+    align-items: center;
+}
