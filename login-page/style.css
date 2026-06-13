@@ -322,6 +322,28 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
 
 .checkbox-label a:hover { color: #ffffff; }
 
+/* ── Login page: remember + forgot row ── */
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-remember {
+    justify-content: flex-start;
+}
+
+.forgot-link {
+    font-size: 0.875rem;
+    color: #86efac;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.forgot-link:hover { color: #ffffff; }
+
 /* ── Submit button ── */
 .btn-submit {
     width: 100%;
