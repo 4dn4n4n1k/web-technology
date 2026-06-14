@@ -104,9 +104,9 @@ img{
 .skills li{
     list-style: none;
 }
-.skills h2{
+.skills h1{
     text-align: center;
-    color: #ffffff;
+    color: #fab300;
     margin-bottom: 20px;
 }
 .skills span{
@@ -144,12 +144,13 @@ img{
 
 .contact h2{
     text-align: center;
-    color: #ffffff;
+    color: #fab300;
     margin-bottom: 10px;
 }
 
 .contact label{
     color: #ffffff;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -162,7 +163,7 @@ img{
 }
 
 .contact button{
-    background-color: #ffffff;
+    background-color: none;
     color: #000000;
     border: none;
     padding: 10px;
@@ -170,5 +171,12 @@ img{
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.contact button:hover{
+    background-color: #fab300;
+    color: #ffffff;
+    
+
 }
 
