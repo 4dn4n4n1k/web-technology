@@ -15,7 +15,7 @@ body {
     justify-content: center;
     padding: 2rem 1rem;
     overflow-x: hidden;
-    background: url('bg.jpg') center / cover no-repeat fixed;
+    background: url('bg.jpg') center center / cover no-repeat;
     position: relative;
 }
 
