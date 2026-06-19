@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Rain layer: canvas for streaks, div for glass drops -->
+    <canvas id="rain-canvas"></canvas>
+    <div class="rain-layer"></div>
+
+    <div class="card">
+
+        <div class="card-header">
+            <h1>Sign Up</h1>
+            <p>Create your account to get started</p>
+        </div>
+
+        <form class="signup-form">
+
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="text" id="fname" name="fname" required placeholder="First Name">
+                    <span class="input-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </span>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="lname" name="lname" required placeholder="Last Name">
+                    <span class="input-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" name="email" required placeholder="Email Address">
+                <span class="input-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                    <span class="input-icon toggle-pw" data-target="password">
+                        <svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="cpassword" name="cpassword" required placeholder="Confirm Password">
+                    <span class="input-icon toggle-pw" data-target="cpassword">
+                        <svg viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="date" name="date" required placeholder="Date of Birth">
+                <span class="input-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                </span>
+            </div>
+
+            <div class="gender-group">
+                <div class="radio-row">
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="Male">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Male</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="Female">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Female</span>
+                    </label>
+                </div>
+            </div>
+
+            <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                <span class="checkbox-custom"></span>
+                I agree to the <a href="#">Terms &amp; Conditions</a>
+            </label>
+
+            <button type="submit" class="btn-submit">Sign Up</button>
+
+            <div class="form-footer">
+                <button type="reset" class="btn-reset">Reset form</button>
+                <span>Already have an account? <a href="login.html">Login</a></span>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        /* ── Date of Birth placeholder trick ── */
+        const dateInput = document.getElementById('date');
+        dateInput.addEventListener('focus', () => { dateInput.type = 'date'; });
+        dateInput.addEventListener('blur',  () => { if (!dateInput.value) dateInput.type = 'text'; });
+
+        /* ── Password toggle ── */
+        document.querySelectorAll('.toggle-pw').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const input = document.getElementById(btn.dataset.target);
+                input.type = input.type === 'password' ? 'text' : 'password';
+                btn.querySelector('svg').style.opacity = input.type === 'text' ? '1' : '0.45';
+            });
+        });
+
+        /* ── Canvas rain streaks ── */
+        const canvas = document.getElementById('rain-canvas');
+        const ctx    = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            canvas.width  = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const ANGLE   = 12 * Math.PI / 180;
+        const sinA    = Math.sin(ANGLE);
+        const cosA    = Math.cos(ANGLE);
+        const streaks = Array.from({ length: 220 }, () => ({
+            x:       Math.random() * window.innerWidth,
+            y:       Math.random() * window.innerHeight,
+            len:     Math.random() * 22 + 10,
+            speed:   Math.random() * 12 + 7,
+            opacity: Math.random() * 0.35 + 0.07,
+            width:   Math.random() < 0.6 ? 0.6 : 1.1,
+        }));
+
+        function drawStreaks() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            streaks.forEach(s => {
+                ctx.save();
+                ctx.globalAlpha = s.opacity;
+                ctx.strokeStyle = '#d0e8ff';
+                ctx.lineWidth   = s.width;
+                ctx.beginPath();
+                ctx.moveTo(s.x, s.y);
+                ctx.lineTo(s.x - s.len * sinA, s.y + s.len * cosA);
+                ctx.stroke();
+                ctx.restore();
+
+                s.y += s.speed;
+                s.x -= s.speed * sinA;
+
+                if (s.y > canvas.height + s.len) {
+                    s.y = -s.len;
+                    s.x = Math.random() * (canvas.width + 100);
+                }
+            });
+            requestAnimationFrame(drawStreaks);
+        }
+        drawStreaks();
+
+    </script>
+
+</body>
+</html>
