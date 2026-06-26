@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Admission Form</title>
+    </head>
+        
+    <body>
+        <h1 style="text-align: center;">University Admission Portal</h1>
+
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="Adnan" maxlength="50" required>
+
+                <br><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Anik" maxlength="50" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="adnananik@fake.com" required>
+
+                <br><br>
+                
+                <label for="phone">Mobile:</label>
+                <input type="text" id="phone" name="phone" placeholder="018XXXXXXXX" required>
+
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+
+                <br><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others
+
+                <br><br>
+
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" placeholder="Dhanmondi, Dhaka, 1205" rows="1" maxlength="100"></textarea>
+
+                <br><br>
+                
+                <label for="interests">Interest Fields:</label>
+                <input type="checkbox" name="interest" id="Coding">Coding
+                <input type="checkbox" name="interest" id="AI">AI
+                <input type="checkbox" name="interest" id="Research">Research
+                <input type="checkbox" name="interest" id="Robotics">Robotics
+            </fieldset>
+                <br>
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <label for="school">School Name:</label>
+                <input type="text" name="school" id="school" required maxlength="50" placeholder="Name of Institute">
+                
+                <br><br>
+
+                <label for="gpa">GPA:</label>
+                <input type="text" name="gpa" id="gpa" required placeholder="4.00">
+
+                <br><br><br>
+
+                <label for="college">College Name:</label>
+                <input type="text" name="college" id="college" required placeholder="Name of Institute:">
+
+                <br><br>
+
+                <label for="cGPA">GPA:</label>
+                <input type="text" name="cGPA" id="cGPA" placeholder="4.00" required>
+
+                <br><br>
+
+                <label for="course">Course Selection:</label>
+                <input type="radio" name="course" value="Bsc">BSC
+                <input type="radio" name="course" value="Msc">Msc
+                
+                <br><br>
+
+                <label for="dept">Preffered department:</label>
+                <select name="dept" id="dept" required>
+                    <option value="">-----------Select a Department-------</option>
+                    <option value="cse">Computer Science And Engineering</option>
+                    <option value="eee">Electrical and Electronic Engineering</option>
+                    <option value="law">Department of Law</option>
+                    <option value="english">Department of English</option>
+                    <option value="architecture">Department of Architecture</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Required Documents</legend>
+
+                <label for="transcript">Academic Transcript:</label>
+                <input type="file" name="transcript" id="transcript" accept=".pdf,.jpg,.jpeg" required>
+
+                <br><br>
+
+                <label for="photo">Photo (Passport Size):</label>
+                <input type="file" name="photo" id="photo" accept=".jpg, .jpeg, .png" required>
+
+                <br><br>
+
+                <label for="resume">Resume/CV:</label>
+                <input type="file" name="resume" id="resume" accept=".pdf,.jpg,.jpeg">
+
+            </fieldset>
+            
+            <br>
+
+            <input type="checkbox" name="agreement" id="agreement">I agree to all University's Terms & Conditions
+
+            <br><br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
