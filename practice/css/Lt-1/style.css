@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #1a3c6e;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 1em;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1em;
+    opacity: 0.85;
+}
+
+.profile {
+    width: 50%;
+    margin: 0 auto 2em auto;
+    background-color: #eaf1fb;
+    border: 2px solid #b0c4de;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #1a3c6e;
+    margin-bottom: 1em;
+}
+
+.student-name {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    color: #1a3c6e;
+}
+
+.department {
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    color: #555;
+}
+
+.student-id {
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #555;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 0.95em;
+    line-height: 1.7em;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #1a3c6e;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}

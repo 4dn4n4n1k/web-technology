@@ -1,0 +1,108 @@
+body
+{
+    text-align: center;
+    background-color: rgb(251, 209, 2);
+    background-image: url("bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-position: center bottom;
+}
+h1
+{
+    font-size: 70px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input
+{
+    text-align: center;
+    width: 550px;
+    height: 55px;
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+#loginbtn
+{
+    width: 160px;
+    font-weight: 50;
+}
+
+.password-wrapper
+{
+    display: inline-block;
+    text-align: center;
+}
+
+.forgot
+{
+    color: #000000;
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup
+{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fname, #lname
+{
+    width: 270px;
+}
+
+#signup
+{
+    width: 200px;
+    color: rgb(100, 108, 108);
+}
+
+.forgetpass
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.forgetpass h2
+{
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.forgetpass label
+{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+#search
+{
+    width: 180px;
+    color: rgb(100, 108, 108);
+}
+
+.back-link
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
