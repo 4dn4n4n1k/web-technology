@@ -1,0 +1,48 @@
+body
+{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+h1
+{
+    background-color: rgb(21, 21, 115);
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+#main-div
+{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 1600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px;
+}
+
+#image
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(223, 98, 76);
+}
+
+button
+{
+    width: 20%;
+    padding: 12px;
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover
+{
+    background-color: brown;
+    cursor: pointer;
+}
