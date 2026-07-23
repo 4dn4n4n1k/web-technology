@@ -1,6 +1,7 @@
 let laptop = 399;
 let mac = 299;
 let iphone = 199;
+
 let total = 0;
 
 
