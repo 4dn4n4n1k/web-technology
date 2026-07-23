@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    font-family:Arial;
+}
+
+header{
+    background:steelblue;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin:30px;
+}
+
+fieldset{
+    width:320px;
+    padding:20px;
+}
+
+input,textarea,select{
+    width:100%;
+    padding:6px;
+    margin-top:5px;
+}
+
+button{
+    padding:10px 20px;
+}
+
+#coupon{
+    color:red;
+    font-weight:bold;
+}
+
+#submitBtn{
+    display:none;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}

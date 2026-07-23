@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My E-commerce Site</h1>
+</header>
+
+<main>
+
+    <!-- Add to Cart -->
+    <fieldset>
+        <legend>Add to Cart</legend>
+
+        <label>Select Product</label>
+        <select id="product" onchange="calculateTotal()">
+            <option value="300">Mouse - Tk 300</option>
+            <option value="800">Keyboard - Tk 800</option>
+            <option value="1500">Headphone - Tk 1500</option>
+            <option value="50000">Laptop - Tk 50000</option>
+        </select>
+
+        <br><br>
+
+        <label>Unit Price (Tk)</label>
+        <input type="text" id="price" readonly>
+
+        <br><br>
+
+        <label>Quantity</label>
+        <input type="number" id="qty"
+            value="1"
+            min="1"
+            onchange="calculateTotal()">
+
+        <br><br>
+
+        <label>Total Price (Tk)</label>
+        <input type="text" id="total" readonly>
+
+        <br><br>
+
+        <p id="coupon"></p>
+
+    </fieldset>
+
+    <!-- Checkout -->
+    <fieldset>
+
+        <legend>Checkout</legend>
+
+        <label>Shipping Address:</label><br>
+        <textarea rows="4" cols="25"></textarea><br><br>
+
+        <label>Delivery Option:</label>
+
+        <select id="delivery" onchange="calculateTotal()">
+            <option value="50">Delivery Inside Dhaka</option>
+            <option value="120">Delivery Outside Dhaka</option>
+        </select>
+
+        <br><br>
+
+        <input type="checkbox" id="agree"
+               onchange="showButton()">
+        <label>I agree to all the terms and conditions.</label>
+
+        <br><br>
+
+        <button id="submitBtn">Submit</button>
+
+    </fieldset>
+
+    
+
+</main>
+
+<footer>
+    Copyright @2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
