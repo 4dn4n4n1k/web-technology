@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Product Cart</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>My E-commerce Site</h1>
+        </header>
+
+        <div class="container">
+            <fieldset id="cart">
+                <legend>Add to Cart</legend>
+
+                <label for="product">Product:</label><br>
+                <input type="text" value="wireless mouse" readonly>
+
+                <br><br>
+
+                <label for="price">Unit Price (Tk):</label><br>
+                <input type="number" id="price" value="500" readonly>
+
+                <br><br>
+
+                <label for="quantity">Unit Quantity:</label><br>
+                <input type="number" id="quantity" value="1" min="0">
+
+                <br><br>
+
+                <label for="total">Total Price (Tk):</label><br>
+                <input type="text" name="" id="total" readonly>
+
+                <br><br>
+
+                <p id="coupon"></p>
+            </fieldset>
+
+            <fieldset id="checkout">
+                <legend>Checkout</legend>
+
+                <label for="address">Shipping Address:</label><br>
+                <textarea id="address" rows="4"></textarea>
+                
+                <br><br>
+
+                <label for="location">Delivery Location:</label><br>
+                <select id="location">
+                    <option value="50">Inside Dhaka</option>
+                    <option value="120">Outside Dhaka</option>
+                </select>
+
+                <br><br>
+
+                <label for="deliveryCharge">Delivery Charge (Tk):</label><br>
+                <input type="text" id="deliveryCharge" readonly>
+                
+                <br><br>
+
+                <label for="fPrice">Final Price(Tk):</label><br>
+                <input type="text" id="fPrice" readonly>
+
+                <br><br>
+
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree to all the terms and conditions</label>
+
+                <br><br>
+
+                <button id="submit">Submit</button>
+
+            </fieldset>
+        </div>
+
+        <footer>
+            Copyright 2026 My E-commerce
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

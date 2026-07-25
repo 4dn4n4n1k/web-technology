@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+    padding-bottom: 70px;
+}
+
+h1{
+    background-color: rgb(99, 0, 192);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+fieldset{
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+input, textarea, select{
+    width: 100%;
+    padding: 10px;
+}
+
+#coupon{
+    color: green;
+    font-weight: bold;
+}
+
+button{
+    background-color: rgb(4, 157, 106);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+button:hover{
+    background-color: rgb(7, 110, 76);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(41, 41, 127);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
