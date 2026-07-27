@@ -1,51 +1,59 @@
-body{
+body
+{
     background-color: lightgray;
+
 }
 
-.container{
+.container
+{
     width: 500px;
     background-color: white;
     padding: 25px;
     margin: 40px auto;
     border: 2px solid gray;
     border-radius: 10px;
+}
+
+h1
+{
+    color: darkblue;
+    font-size: 30px;
     text-align: center;
 }
 
-h1{
-    color: darkblue;
-    font-size: 30px;
-    align-items: center;
-    margin: 20px;
-}
-
-input{
+input
+{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid gray;
+    border: 1px solid grey;
     font-size: 16px;
     box-sizing: border-box;
 }
 
-button{
+button
+{
+    margin: 10px;
     width: 48%;
     padding: 10px;
     font-size: 16px;
     color: white;
-    border: none;
+    border-style: none;
     cursor: pointer;
 }
 
-#generate{
+#generate
+{
     background-color: green;
 }
 
-#reset{
+#reset
+{
     background-color: red;
 }
 
-.card{
+.card
+{
     width: 100%;
     margin-top: 25px;
     padding: 20px;
