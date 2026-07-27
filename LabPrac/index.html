@@ -2,48 +2,53 @@
 
 <html>
     <head>
-        <title>Employee Management System </title>
-
+        <title>Employee Management System</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
         <div class="container">
-        
-            <h1>Employee Management System </h1>
+            <h1>Employee Management System</h1>
 
             <label for="name">Employee Name:</label><br>
-            <input type="text" name="name" id="name">
+            <input type="text" id="name">
 
             <br><br>
 
             <label for="id">Employee ID:</label><br>
-            <input type="text" name="id" id="id">
+            <input type="text" id="id">
 
             <br><br>
 
-            <label for="dept">Department:</label><br>
-            <input type="text" name="dept" id="dept">
+            <label for="dept">Employee Department:</label><br>
+            <input type="text" id="dept">
 
             <br><br>
 
             <label for="salary">Monthly Salary:</label><br>
-            <input type="text" name="salary" id="salary">
+            <input type="text" id="salary">
 
             <br><br>
 
             <button id="generate">Generate Employee Card</button>
-            <button type="reset" id="reset">Reset</button>
+            <button id="reset">Reset</button>
 
             <p id="feedback"></p>
-            
-            <div id="card">
+
+            <div id="card" class="card" style="display: none;">
+                <h2>Employee Name</h2>
+                <p>Name: <span id="cardName"></span></p>
+                <p>ID: <span id="cardId"></span></p>
+                <p>Department: <span id="cardDept"></span></p>
+                <p>Salary: <span id="cardSalary"></span></p>
+                <p>Category: <span id="cardCategory"></span></p>
+
 
             </div>
 
         </div>
 
-        <script src="index.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
