@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.content {
+    height: 1500px;
+}
+
+.contact-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 220px;
+    padding: 15px;
+
+    background-color: #007BFF;
+    color: white;
+
+    border: 2px solid #0056b3;
+    border-radius: 10px;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: background-color 0.3s ease;
+}
+
+.contact-widget h3 {
+    margin-top: 0;
+}
+
+.contact-widget a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-widget a:hover {
+    text-decoration: underline;
+}
+
+.contact-widget:hover {
+    background-color: #0056b3;
+}
